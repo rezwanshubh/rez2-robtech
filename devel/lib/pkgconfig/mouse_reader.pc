@@ -1,0 +1,8 @@
+prefix=/home/rostest/rez2-robtech/devel
+
+Name: mouse_reader
+Description: Description of mouse_reader
+Version: 0.0.0
+Cflags: -I/home/rostest/rez2-robtech/devel/include
+Libs: -L/home/rostest/rez2-robtech/devel/lib 
+Requires: 

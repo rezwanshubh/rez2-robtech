@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rostest/rez2-robtech/src/keyboard_reader/include/keyboard_reader/keyboard_reader.h
+linux/input.h
+-
+string.h
+-
+map
+-
+vector
+-
+errno.h
+-
+stdio.h
+-
+unistd.h
+-
+fcntl.h
+-
+glob.h
+-
+sstream
+-
+
+/home/rostest/rez2-robtech/src/keyboard_reader/src/keyboard_reader.cpp
+keyboard_reader/keyboard_reader.h
+/home/rostest/rez2-robtech/src/keyboard_reader/src/keyboard_reader/keyboard_reader.h
+

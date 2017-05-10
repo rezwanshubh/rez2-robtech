@@ -1,0 +1,15 @@
+# Dirction values can be -1 for counter-clockwise, 0 for no, and 1 clockwise rotation
+int8 direction_x
+int8 direction_y
+int8 wheel_rotation
+
+# Sum of direction values since the launch of the node
+int64 integral
+
+# TRUE while button is pressed, FALSE otherwise
+bool btn_right
+bool btn_left
+bool btn_middle
+
+# TRUE if the event was triggered by a push or a release of the button; FALSE otherwise
+#bool push_state_changed

@@ -1,0 +1,2 @@
+keyboard_reader:mouse_reader:my_turtle:rezwan_pack
+-DCATKIN_DEVEL_PREFIX=/home/rostest/rez2-robtech/devel -DCMAKE_INSTALL_PREFIX=/home/rostest/rez2-robtech/install -G Unix Makefiles

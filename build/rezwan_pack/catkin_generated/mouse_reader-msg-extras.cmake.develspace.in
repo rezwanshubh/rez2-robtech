@@ -1,0 +1,2 @@
+set(mouse_reader_MESSAGE_FILES "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg")
+set(mouse_reader_SERVICE_FILES "")
