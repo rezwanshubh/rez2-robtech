@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg"
+messages_str = "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg"
 services_str = ""
 pkg_name = "rezwan_pack"
 dependencies_str = "std_msgs"

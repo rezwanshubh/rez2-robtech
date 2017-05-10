@@ -150,18 +150,18 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/rule:
-	cd /home/rostest/rez2-robtech/build && $(MAKE) -f CMakeFiles/Makefile2 rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/rule
-.PHONY : rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/rule
+rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/rule:
+	cd /home/rostest/rez2-robtech/build && $(MAKE) -f CMakeFiles/Makefile2 rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/rule
+.PHONY : rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/rule
 
 # Convenience name for target.
-_rezwan_pack_generate_messages_check_deps_MyEvent: rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/rule
-.PHONY : _rezwan_pack_generate_messages_check_deps_MyEvent
+_rezwan_pack_generate_messages_check_deps_Mouse: rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/rule
+.PHONY : _rezwan_pack_generate_messages_check_deps_Mouse
 
 # fast build rule for target.
-_rezwan_pack_generate_messages_check_deps_MyEvent/fast:
-	cd /home/rostest/rez2-robtech/build && $(MAKE) -f rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/build.make rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/build
-.PHONY : _rezwan_pack_generate_messages_check_deps_MyEvent/fast
+_rezwan_pack_generate_messages_check_deps_Mouse/fast:
+	cd /home/rostest/rez2-robtech/build && $(MAKE) -f rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/build.make rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/build
+.PHONY : _rezwan_pack_generate_messages_check_deps_Mouse/fast
 
 # Convenience name for target.
 rezwan_pack/CMakeFiles/rezwan_pack.dir/rule:
@@ -305,7 +305,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _rezwan_pack_generate_messages_check_deps_MyEvent"
+	@echo "... _rezwan_pack_generate_messages_check_deps_Mouse"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"

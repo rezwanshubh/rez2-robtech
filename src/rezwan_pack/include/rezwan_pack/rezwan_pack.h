@@ -6,7 +6,7 @@
 #include <glob.h>	// for counting files in a dir (needed for counting event files in /dev/input)
 #include <sstream>
 #include "ros/ros.h"
-#include "rezwan_pack/MyEvent.h"
+#include "rezwan_pack/Mouse.h"
 
 #ifndef REZWAN_PACK_H
 #define REZWAN_PACK_H

@@ -15,9 +15,9 @@ add_custom_target(rezwan_pack_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg" NAME_WE)
+get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg" NAME_WE)
 add_custom_target(_rezwan_pack_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rezwan_pack" "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "rezwan_pack" "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg" ""
 )
 
 #
@@ -27,7 +27,7 @@ add_custom_target(_rezwan_pack_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(rezwan_pack
-  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg"
+  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/rezwan_pack
@@ -47,7 +47,7 @@ add_custom_target(rezwan_pack_generate_messages_cpp
 add_dependencies(rezwan_pack_generate_messages rezwan_pack_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg" NAME_WE)
+get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg" NAME_WE)
 add_dependencies(rezwan_pack_generate_messages_cpp _rezwan_pack_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -60,7 +60,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rezwan_pack_generate_messages_cpp)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(rezwan_pack
-  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg"
+  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/rezwan_pack
@@ -80,7 +80,7 @@ add_custom_target(rezwan_pack_generate_messages_lisp
 add_dependencies(rezwan_pack_generate_messages rezwan_pack_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg" NAME_WE)
+get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg" NAME_WE)
 add_dependencies(rezwan_pack_generate_messages_lisp _rezwan_pack_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -93,7 +93,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS rezwan_pack_generate_messages_lisp)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(rezwan_pack
-  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg"
+  "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/rezwan_pack
@@ -113,7 +113,7 @@ add_custom_target(rezwan_pack_generate_messages_py
 add_dependencies(rezwan_pack_generate_messages rezwan_pack_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/MyEvent.msg" NAME_WE)
+get_filename_component(_filename "/home/rostest/rez2-robtech/src/rezwan_pack/msg/Mouse.msg" NAME_WE)
 add_dependencies(rezwan_pack_generate_messages_py _rezwan_pack_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

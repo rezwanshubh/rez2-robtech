@@ -605,17 +605,17 @@ mouse_reader_genpy/fast:
 .PHONY : mouse_reader_genpy/fast
 
 #=============================================================================
-# Target rules for targets named _rezwan_pack_generate_messages_check_deps_MyEvent
+# Target rules for targets named _rezwan_pack_generate_messages_check_deps_Mouse
 
 # Build rule for target.
-_rezwan_pack_generate_messages_check_deps_MyEvent: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _rezwan_pack_generate_messages_check_deps_MyEvent
-.PHONY : _rezwan_pack_generate_messages_check_deps_MyEvent
+_rezwan_pack_generate_messages_check_deps_Mouse: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _rezwan_pack_generate_messages_check_deps_Mouse
+.PHONY : _rezwan_pack_generate_messages_check_deps_Mouse
 
 # fast build rule for target.
-_rezwan_pack_generate_messages_check_deps_MyEvent/fast:
-	$(MAKE) -f rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/build.make rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_MyEvent.dir/build
-.PHONY : _rezwan_pack_generate_messages_check_deps_MyEvent/fast
+_rezwan_pack_generate_messages_check_deps_Mouse/fast:
+	$(MAKE) -f rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/build.make rezwan_pack/CMakeFiles/_rezwan_pack_generate_messages_check_deps_Mouse.dir/build
+.PHONY : _rezwan_pack_generate_messages_check_deps_Mouse/fast
 
 #=============================================================================
 # Target rules for targets named rezwan_pack
@@ -769,7 +769,7 @@ help:
 	@echo "... mouse_reader_generate_messages_py"
 	@echo "... mouse_reader_genlisp"
 	@echo "... mouse_reader_genpy"
-	@echo "... _rezwan_pack_generate_messages_check_deps_MyEvent"
+	@echo "... _rezwan_pack_generate_messages_check_deps_Mouse"
 	@echo "... rezwan_pack"
 	@echo "... rezwan_pack_gencpp"
 	@echo "... rezwan_pack_generate_messages"

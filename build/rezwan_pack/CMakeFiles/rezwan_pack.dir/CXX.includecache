@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rostest/rez2-robtech/devel/include/rezwan_pack/MyEvent.h
+/home/rostest/rez2-robtech/devel/include/rezwan_pack/Mouse.h
 string
 -
 vector
@@ -39,8 +39,8 @@ sstream
 -
 ros/ros.h
 /home/rostest/rez2-robtech/src/rezwan_pack/include/rezwan_pack/ros/ros.h
-rezwan_pack/MyEvent.h
-/home/rostest/rez2-robtech/src/rezwan_pack/include/rezwan_pack/rezwan_pack/MyEvent.h
+rezwan_pack/Mouse.h
+/home/rostest/rez2-robtech/src/rezwan_pack/include/rezwan_pack/rezwan_pack/Mouse.h
 
 /home/rostest/rez2-robtech/src/rezwan_pack/src/rezwan_pack.cpp
 rezwan_pack/rezwan_pack.h

@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rezwan_pack_generate_messages_py"
-  "/home/rostest/rez2-robtech/devel/lib/python2.7/dist-packages/rezwan_pack/msg/_MyEvent.py"
+  "/home/rostest/rez2-robtech/devel/lib/python2.7/dist-packages/rezwan_pack/msg/_Mouse.py"
   "/home/rostest/rez2-robtech/devel/lib/python2.7/dist-packages/rezwan_pack/msg/__init__.py"
 )
 

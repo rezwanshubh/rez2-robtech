@@ -82,7 +82,7 @@ bool Mouse::isReadable() {
 void Mouse::processEvent(struct input_event *ev,
 		ros::Publisher& ros_publisher) {
 
-	rezwan_pack::MyEvent ros_message;
+	rezwan_pack::Mouse ros_message;
 
 	switch (ev->type) {
 	case EV_SYN:
@@ -183,7 +183,7 @@ int main(int argc, char *argv[]) {
 		return -1;
 	}
 
-	ros::Publisher pub_My_events = pnh.advertise<rezwan_pack::MyEvent>("rezwan_mouse", 100);
+	ros::Publisher pub_My_events = pnh.advertise<rezwan_pack::Mouse>("rezwan_mouse", 100);
 	Mouse.spinMouse(pub_My_events);
 
 	Mouse.closeMouse();

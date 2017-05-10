@@ -1,6 +1,6 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/rezwan_pack_generate_messages_cpp"
-  "/home/rostest/rez2-robtech/devel/include/rezwan_pack/MyEvent.h"
+  "/home/rostest/rez2-robtech/devel/include/rezwan_pack/Mouse.h"
 )
 
 # Per-language clean rules from dependency scanning.
