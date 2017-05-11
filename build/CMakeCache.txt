@@ -295,6 +295,12 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+helloworld_BINARY_DIR:STATIC=/home/rostest/rez2-robtech/build/helloworld
+
+//Value Computed by CMake
+helloworld_SOURCE_DIR:STATIC=/home/rostest/rez2-robtech/src/helloworld
+
+//Value Computed by CMake
 keyboard_reader_BINARY_DIR:STATIC=/home/rostest/rez2-robtech/build/keyboard_reader
 
 //Dependencies for the target
@@ -462,7 +468,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=6
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

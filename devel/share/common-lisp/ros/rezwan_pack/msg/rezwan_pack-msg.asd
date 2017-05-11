@@ -4,6 +4,6 @@
 (defsystem "rezwan_pack-msg"
   :depends-on (:roslisp-msg-protocol :roslisp-utils )
   :components ((:file "_package")
-    (:file "MyEvent" :depends-on ("_package_MyEvent"))
-    (:file "_package_MyEvent" :depends-on ("_package"))
+    (:file "Mouse" :depends-on ("_package_Mouse"))
+    (:file "_package_Mouse" :depends-on ("_package"))
   ))

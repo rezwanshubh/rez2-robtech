@@ -7,19 +7,18 @@ import struct
 
 
 class Mouse(genpy.Message):
-  _md5sum = "2a533572c34f024512abad75ea2a34b4"
+  _md5sum = "fd373f94bff457170b2317d79cd8865a"
   _type = "rezwan_pack/Mouse"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """int8 direction_x
-int8 direction_y
-int8 wheel_rotation
+  _full_text = """int64 direction_x
+int64 direction_y
+int64 wheel_rotation
 
 bool btn_right
 bool btn_left
-bool btn_middle
-"""
+bool btn_middle"""
   __slots__ = ['direction_x','direction_y','wheel_rotation','btn_right','btn_left','btn_middle']
-  _slot_types = ['int8','int8','int8','bool','bool','bool']
+  _slot_types = ['int64','int64','int64','bool','bool','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -71,7 +70,7 @@ bool btn_middle
     """
     try:
       _x = self
-      buff.write(_struct_3b3B.pack(_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle))
+      buff.write(_struct_3q3B.pack(_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -84,8 +83,8 @@ bool btn_middle
       end = 0
       _x = self
       start = end
-      end += 6
-      (_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle,) = _struct_3b3B.unpack(str[start:end])
+      end += 27
+      (_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle,) = _struct_3q3B.unpack(str[start:end])
       self.btn_right = bool(self.btn_right)
       self.btn_left = bool(self.btn_left)
       self.btn_middle = bool(self.btn_middle)
@@ -102,7 +101,7 @@ bool btn_middle
     """
     try:
       _x = self
-      buff.write(_struct_3b3B.pack(_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle))
+      buff.write(_struct_3q3B.pack(_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -116,8 +115,8 @@ bool btn_middle
       end = 0
       _x = self
       start = end
-      end += 6
-      (_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle,) = _struct_3b3B.unpack(str[start:end])
+      end += 27
+      (_x.direction_x, _x.direction_y, _x.wheel_rotation, _x.btn_right, _x.btn_left, _x.btn_middle,) = _struct_3q3B.unpack(str[start:end])
       self.btn_right = bool(self.btn_right)
       self.btn_left = bool(self.btn_left)
       self.btn_middle = bool(self.btn_middle)
@@ -126,4 +125,4 @@ bool btn_middle
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_3b3B = struct.Struct("<3b3B")
+_struct_3q3B = struct.Struct("<3q3B")

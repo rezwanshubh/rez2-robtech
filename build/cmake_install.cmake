@@ -118,6 +118,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/rostest/rez2-robtech/build/gtest/cmake_install.cmake")
   INCLUDE("/home/rostest/rez2-robtech/build/keyboard_reader/cmake_install.cmake")
+  INCLUDE("/home/rostest/rez2-robtech/build/helloworld/cmake_install.cmake")
   INCLUDE("/home/rostest/rez2-robtech/build/mouse_reader/cmake_install.cmake")
   INCLUDE("/home/rostest/rez2-robtech/build/my_turtle/cmake_install.cmake")
   INCLUDE("/home/rostest/rez2-robtech/build/rezwan_pack/cmake_install.cmake")

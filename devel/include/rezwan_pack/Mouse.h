@@ -43,13 +43,13 @@ struct Mouse_
 
 
 
-   typedef int8_t _direction_x_type;
+   typedef int64_t _direction_x_type;
   _direction_x_type direction_x;
 
-   typedef int8_t _direction_y_type;
+   typedef int64_t _direction_y_type;
   _direction_y_type direction_y;
 
-   typedef int8_t _wheel_rotation_type;
+   typedef int64_t _wheel_rotation_type;
   _wheel_rotation_type wheel_rotation;
 
    typedef uint8_t _btn_right_type;
@@ -138,12 +138,12 @@ struct MD5Sum< ::rezwan_pack::Mouse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "2a533572c34f024512abad75ea2a34b4";
+    return "fd373f94bff457170b2317d79cd8865a";
   }
 
   static const char* value(const ::rezwan_pack::Mouse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x2a533572c34f0245ULL;
-  static const uint64_t static_value2 = 0x12abad75ea2a34b4ULL;
+  static const uint64_t static_value1 = 0xfd373f94bff45717ULL;
+  static const uint64_t static_value2 = 0x0b2317d79cd8865aULL;
 };
 
 template<class ContainerAllocator>
@@ -162,9 +162,9 @@ struct Definition< ::rezwan_pack::Mouse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int8 direction_x\n\
-int8 direction_y\n\
-int8 wheel_rotation\n\
+    return "int64 direction_x\n\
+int64 direction_y\n\
+int64 wheel_rotation\n\
 \n\
 bool btn_right\n\
 bool btn_left\n\
@@ -212,11 +212,11 @@ struct Printer< ::rezwan_pack::Mouse_<ContainerAllocator> >
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::rezwan_pack::Mouse_<ContainerAllocator>& v)
   {
     s << indent << "direction_x: ";
-    Printer<int8_t>::stream(s, indent + "  ", v.direction_x);
+    Printer<int64_t>::stream(s, indent + "  ", v.direction_x);
     s << indent << "direction_y: ";
-    Printer<int8_t>::stream(s, indent + "  ", v.direction_y);
+    Printer<int64_t>::stream(s, indent + "  ", v.direction_y);
     s << indent << "wheel_rotation: ";
-    Printer<int8_t>::stream(s, indent + "  ", v.wheel_rotation);
+    Printer<int64_t>::stream(s, indent + "  ", v.wheel_rotation);
     s << indent << "btn_right: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.btn_right);
     s << indent << "btn_left: ";

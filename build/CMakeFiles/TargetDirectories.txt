@@ -6,6 +6,7 @@
 /home/rostest/rez2-robtech/build/CMakeFiles/doxygen.dir
 /home/rostest/rez2-robtech/build/gtest/CMakeFiles/gtest.dir
 /home/rostest/rez2-robtech/build/gtest/CMakeFiles/gtest_main.dir
+/home/rostest/rez2-robtech/build/helloworld/CMakeFiles/helloworld.dir
 /home/rostest/rez2-robtech/build/keyboard_reader/CMakeFiles/keyboard_event_publisher.dir
 /home/rostest/rez2-robtech/build/keyboard_reader/CMakeFiles/keyboard_reader.dir
 /home/rostest/rez2-robtech/build/keyboard_reader/CMakeFiles/keyboard_reader_gencpp.dir

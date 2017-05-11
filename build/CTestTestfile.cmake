@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(keyboard_reader)
+SUBDIRS(helloworld)
 SUBDIRS(mouse_reader)
 SUBDIRS(my_turtle)
 SUBDIRS(rezwan_pack)

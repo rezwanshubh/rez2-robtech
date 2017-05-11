@@ -45,4 +45,6 @@ rezwan_pack/Mouse.h
 /home/rostest/rez2-robtech/src/rezwan_pack/src/rezwan_pack.cpp
 rezwan_pack/rezwan_pack.h
 /home/rostest/rez2-robtech/src/rezwan_pack/src/rezwan_pack/rezwan_pack.h
+std_msgs/String.h
+/home/rostest/rez2-robtech/src/rezwan_pack/src/std_msgs/String.h
 

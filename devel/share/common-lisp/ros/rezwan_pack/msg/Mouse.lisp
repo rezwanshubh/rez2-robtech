@@ -10,17 +10,17 @@
   ((direction_x
     :reader direction_x
     :initarg :direction_x
-    :type cl:fixnum
+    :type cl:integer
     :initform 0)
    (direction_y
     :reader direction_y
     :initarg :direction_y
-    :type cl:fixnum
+    :type cl:integer
     :initform 0)
    (wheel_rotation
     :reader wheel_rotation
     :initarg :wheel_rotation
-    :type cl:fixnum
+    :type cl:integer
     :initform 0)
    (btn_right
     :reader btn_right
@@ -78,14 +78,35 @@
   (btn_middle m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <Mouse>) ostream)
   "Serializes a message object of type '<Mouse>"
-  (cl:let* ((signed (cl:slot-value msg 'direction_x)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 256) signed)))
+  (cl:let* ((signed (cl:slot-value msg 'direction_x)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 18446744073709551616) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) unsigned) ostream)
     )
-  (cl:let* ((signed (cl:slot-value msg 'direction_y)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 256) signed)))
+  (cl:let* ((signed (cl:slot-value msg 'direction_y)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 18446744073709551616) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) unsigned) ostream)
     )
-  (cl:let* ((signed (cl:slot-value msg 'wheel_rotation)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 256) signed)))
+  (cl:let* ((signed (cl:slot-value msg 'wheel_rotation)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 18446744073709551616) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 32) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 40) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 48) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 56) unsigned) ostream)
     )
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'btn_right) 1 0)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'btn_left) 1 0)) ostream)
@@ -95,13 +116,34 @@
   "Deserializes a message object of type '<Mouse>"
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'direction_x) (cl:if (cl:< unsigned 128) unsigned (cl:- unsigned 256))))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'direction_x) (cl:if (cl:< unsigned 9223372036854775808) unsigned (cl:- unsigned 18446744073709551616))))
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'direction_y) (cl:if (cl:< unsigned 128) unsigned (cl:- unsigned 256))))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'direction_y) (cl:if (cl:< unsigned 9223372036854775808) unsigned (cl:- unsigned 18446744073709551616))))
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'wheel_rotation) (cl:if (cl:< unsigned 128) unsigned (cl:- unsigned 256))))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 32) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 40) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 48) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 56) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'wheel_rotation) (cl:if (cl:< unsigned 9223372036854775808) unsigned (cl:- unsigned 18446744073709551616))))
     (cl:setf (cl:slot-value msg 'btn_right) (cl:not (cl:zerop (cl:read-byte istream))))
     (cl:setf (cl:slot-value msg 'btn_left) (cl:not (cl:zerop (cl:read-byte istream))))
     (cl:setf (cl:slot-value msg 'btn_middle) (cl:not (cl:zerop (cl:read-byte istream))))
@@ -115,21 +157,21 @@
   "rezwan_pack/Mouse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<Mouse>)))
   "Returns md5sum for a message object of type '<Mouse>"
-  "2a533572c34f024512abad75ea2a34b4")
+  "fd373f94bff457170b2317d79cd8865a")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'Mouse)))
   "Returns md5sum for a message object of type 'Mouse"
-  "2a533572c34f024512abad75ea2a34b4")
+  "fd373f94bff457170b2317d79cd8865a")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<Mouse>)))
   "Returns full string definition for message of type '<Mouse>"
-  (cl:format cl:nil "int8 direction_x~%int8 direction_y~%int8 wheel_rotation~%~%bool btn_right~%bool btn_left~%bool btn_middle~%~%~%"))
+  (cl:format cl:nil "int64 direction_x~%int64 direction_y~%int64 wheel_rotation~%~%bool btn_right~%bool btn_left~%bool btn_middle~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'Mouse)))
   "Returns full string definition for message of type 'Mouse"
-  (cl:format cl:nil "int8 direction_x~%int8 direction_y~%int8 wheel_rotation~%~%bool btn_right~%bool btn_left~%bool btn_middle~%~%~%"))
+  (cl:format cl:nil "int64 direction_x~%int64 direction_y~%int64 wheel_rotation~%~%bool btn_right~%bool btn_left~%bool btn_middle~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <Mouse>))
   (cl:+ 0
-     1
-     1
-     1
+     8
+     8
+     8
      1
      1
      1
